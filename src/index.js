@@ -35,7 +35,7 @@ app.use(
         preflightContinue: false
     }),
 );
-const port = process.env.PORT || 4002;
+const port = process.env.PORT || 4050;
 app.use("/apis", require("./routes"));
 
 app.listen(port, () => {
