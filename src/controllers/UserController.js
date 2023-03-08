@@ -3,6 +3,7 @@ const { resultObject, generateResponse } = require("../utils/CommonUtils")
 const { validateAge, validateEmail, validatePassword } = require("../utils/ValidationUtils")
 const registerNewUser = (req, res) => {
     return new Promise((resolve, reject) => {
+        console.log(req.headers)
         const { email, password, age } = req.headers
         try {
             if (validateEmail(email) && validatePassword(password) && validateAge(age)) {
