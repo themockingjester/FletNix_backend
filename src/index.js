@@ -12,7 +12,7 @@ app.use(cookieSession({
     // Cookie Options
     maxAge: 24 * 60 * 60 * 1000, // 1 day
     path: "/",
-    sameSite: "none",
+    sameSite: "lax",
 }))
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
