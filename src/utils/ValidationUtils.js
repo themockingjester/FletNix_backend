@@ -21,7 +21,7 @@ const validateNumber = (num) => {
 
 const validateAge = (num) => {
     try {
-        return validator.default.isNumeric(`${num}`) && num > 8
+        return validator.default.isNumeric(`${num}`) && num > 2
     } catch (error) {
         return false
     }
