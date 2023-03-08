@@ -1,5 +1,5 @@
 const { response } = require("express")
-const { resultObject } = require("../utils/commonUtils")
+const { resultObject } = require("../utils/CommonUtils")
 const { usersCollection } = require("./DbConnection")
 const registerUserInDb = (email, password, age) => {
     return new Promise((resolve, reject) => {

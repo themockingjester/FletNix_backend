@@ -1,6 +1,6 @@
 const path = require('path')
 
-const { generateResponse } = require(path.join(__dirname, "../utils/commonUtils"))
+const { generateResponse } = require(path.join(__dirname, "../utils/CommonUtils"))
 const { ValidAge } = require("../utils/appConstants")
 
 
