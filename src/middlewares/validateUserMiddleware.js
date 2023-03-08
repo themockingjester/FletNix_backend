@@ -1,5 +1,5 @@
-const { generateResponse } = require("../utils/commonUtils")
-const { ValidAge } = require("../utils/appConstants")
+import { generateResponse } from "../utils/commonUtils"
+import { ValidAge } from "../utils/appConstants"
 
 
 
@@ -24,6 +24,6 @@ function isUserLoggedIn(req, res, next) {
 
 };
 
-module.exports = {
+export default {
     isAuthorisedForSensitiveMovies, isUserLoggedIn
 }
