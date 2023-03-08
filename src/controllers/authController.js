@@ -3,7 +3,7 @@ const { resultObject, generateResponse } = require("../utils/CommonUtils")
 const { validateAge, validateEmail, validatePassword } = require("../utils/ValidationUtils")
 const loginUser = (req, res) => {
     return new Promise((resolve, reject) => {
-        const { email, password } = req.body
+        const { email, password } = req.headers
         try {
             console.log(req.session)
             checkUserCredentialsInDB(email, password).then((response) => {

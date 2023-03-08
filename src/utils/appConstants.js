@@ -1,4 +1,4 @@
-const ValidAge = 3
+const ValidAge = 18
 
 module.exports =
 {

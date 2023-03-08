@@ -3,4 +3,4 @@ const { isAuthorisedForSensitiveMovies, isUserLoggedIn } = require("../middlewar
 const { searchInMedia, getMediaData } = require("../controllers/mediaController")
 router.get('/search', [isUserLoggedIn], searchInMedia)
 router.get('/getMediaData', [isUserLoggedIn], getMediaData)
-module.exports = router
+module.exports = router 
