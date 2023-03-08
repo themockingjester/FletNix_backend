@@ -1,5 +1,4 @@
 
-const { generateResponse } = require("../utils/commonUtils")
 const router = require("express").Router();
 const auth = require("./auth")
 const user = require('./user')
